@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="mb-4">Formulaire d'inscription</h2>
+    <h2 class="mb-4">Formulaire de connexion</h2>
     <form action="script-connexion.php" method="post">
         
         <div class="mb-3">
