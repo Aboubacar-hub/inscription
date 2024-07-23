@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 $mail->send();
                 echo 'L\'email de confirmation a été envoyé.';
+                
             } catch (Exception $e) {
                 echo "L'email n'a pas pu être envoyé. Erreur: {$mail->ErrorInfo}";
             }

@@ -25,6 +25,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             if (mail($to, $subject, $message, $headers)) {
                 echo " l'inscription nickel et  L'email de confirmation a été envoyé. ";
+                // Attendre quelques secondes avant la redirection (optionnel)
+                   sleep(2);
+
+                    // Rediriger vers une autre page (par exemple, la page de connexion)
+                   header("Location: connexion.php");
+
+                    // Assurez-vous d'arrêter l'exécution du script après la redirection
+                    exit();
+                
             } else {
                 echo "Erreur lors de l'envoi de l'email de confirmation.";
             }
