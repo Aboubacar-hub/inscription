@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           // Connexion réussie
           $_SESSION['user_id'] = $user['id'];
           $_SESSION['email'] = $user['email'];
-          echo "vous etes connecte! , " . htmlspecialchars($user['email']) . ".";
+          header('Location: admin/'); // Redirection vers le tableau de bord
       } else {
           // Connexion échouée
           echo "connexion echoué.";
